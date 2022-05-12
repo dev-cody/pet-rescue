@@ -1,24 +1,15 @@
-import React , {useState, useEffect } from 'react'
+import React from 'react'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import Navbar from './components/Navbar/Navbar'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
 
-  const [newdata, setNewData] = useState([{}])
-
-  useEffect(() => {
-    fetch("/api")
-    .then(
-        response => response.json()
-    ).then(
-        data => {
-          setNewData(data)
-        }
-    )
-  }, [])
-
   return (
     <div>
+      <Navbar />
       <Header />
       <Footer />
     </div>
