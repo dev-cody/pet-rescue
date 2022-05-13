@@ -1,8 +1,4 @@
-/* nav {
-    height: 80px;
+nav {
+    color: #fff;
     background-color: #28A0A1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-} */
+}
